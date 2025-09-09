@@ -70,6 +70,11 @@ app.use((err, req, res, next) => {
   res.status(500).send('서버에서 문제가 발생했습니다.');
 });
 
+
+app.get('/healthz', (req, res) => {
+  res.status(200).send('OK');
+});
+
 // 서버 실행
 app.listen(process.env.PORT || 5000, () => {
   console.log(
