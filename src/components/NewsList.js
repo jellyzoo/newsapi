@@ -31,7 +31,7 @@ const NewsList = ({ category, fromDate }) => {
       try {
         // 서버에 요청 보내기
         const response = await axios.get(
-          `http://localhost:5000/news?category=${category}&fromDate=${fromDate}`
+          `https://newsapi-68cj.onrender.com/news?category=${category}&fromDate=${fromDate}`
         );
 
         setArticles(response.data.articles); // API에서 가져온 기사 데이터를 상태에 저장
