@@ -11,8 +11,8 @@
 /coverage
 
 # production
-/build
-
+# /build 주석 처리하여 빌드 파일을 GitHub에 포함
+# /build
 
 # misc
 .DS_Store
